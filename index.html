@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FADIEM | Estructuras de Acero</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+
+<div class="container">
+
+<a class="navbar-brand" href="#">
+<img src="assets/img/LOGO FADIEM BORDE.png" alt="FADIEM" class="logo">
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link active" href="index.html" data-key="NavBar1"></a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#servicios" data-key="NavBar2"></a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#sectores" data-key="NavBar3"></a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#nosotros" data-key="NavBar4"></a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link btn btn-warning text-dark ms-3 px-3" href="cotizaciones.html" data-key="NavBar5">
+Cotizar
+</a>
+</li>
+</ul>
+
+
+<!-- Idiomas Seleccionador -->
+
+<div class="lang-selector">
+  <button class="lang-btn" id="lang-btn">
+    <img id="lang-flag" src="assets/img/mexico.jpg" width="24" height="24" style="border-radius: 3px;">
+    <span id="lang-label">ES</span>
+    <i class="ti ti-chevron-down"></i>
+  </button>
+
+  <div class="lang-dropdown" id="lang-dropdown">
+    <div class="lang-option" onclick="cambiarIdioma('es')">
+      <img src="assets/img/mexico.jpg" width="22" height="22" style="border-radius: 3px;"> Español
+    </div>
+    <div class="lang-option" onclick="cambiarIdioma('en')">
+      <img src="assets/img/usa.jpg" width="22" height="22" style="border-radius: 3px;"> English
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</nav>
+
+</header>
+
+
+
+
+<!-- BANNER -->
+
+
+<section id="banner" class="position-relative">
+
+<div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img src="assets/img/HERO/Hero1.jpeg" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="assets/img/HERO/Hero2.png" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="assets/img/Fabricacion/Fabricacion2.1.png" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="assets/img/Montaje/Montaje2.2.png" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="assets/img/HERO/Hero7.jpg" class="d-block w-100">
+</div>
+
+
+</div>
+
+</div>
+
+<!-- CONTENIDO ENCIMA -->
+<div class="overlay"></div>
+
+<div class="container text-center text-white content">
+
+<h1 data-key="titulo" class="display-4 fw-bold"></h1>
+
+<p data-key="descripcion" class="lead"></p>
+
+<a data-key="boton" href="cotizaciones.html" class="btn btn-warning btn-lg mt-3"></a>
+
+</div>
+
+</section>
+
+
+
+<!-- SERVICIOS -->
+<section id="servicios" class="py-5">
+
+<div class="container">
+
+<h2 class="text-center mb-5" data-key="servicios_titulo"></h2>
+
+<div class="row g-4 reveal-up">
+
+
+<div class="col-md-4">
+<div class="card servicio-card text-center p-4">
+
+<i class="fa-solid fa-drafting-compass fa-3x mb-3"></i>
+
+<h4 data-key="servicio1_titulo"></h4>
+
+<p data-key="servicio1_desc"></p>
+
+</div>
+</div>
+
+
+<div class="col-md-4">
+<div class="card servicio-card text-center p-4">
+
+<i class="fa-solid fa-industry fa-3x mb-3"></i>
+
+<h4 data-key="servicio2_titulo"></h4>
+
+<p data-key="servicio2_desc"></p>
+
+</div>
+</div>
+
+
+<div class="col-md-4">
+<div class="card servicio-card text-center p-4">
+
+<i class="fa-solid fa-building fa-3x mb-3"></i>
+
+<h4 data-key="servicio3_titulo"></h4>
+
+<p data-key="servicio3_desc"></p>
+
+</div>
+</div>
+
+<div class="text-center mt-4">
+<a href="servicios.html" class="btn-vermas" data-key="ver_mas"></a>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+<!-- SECTORES -->
+<section id="sectores" class="py-5 sectores-bg">
+<div class="container text-center">
+
+<h2 class="mb-5 titulo-seccion" data-key="sectores_titulo"></h2>
+
+<div class="row g-4 reveal">
+
+<div class="col-md-3">
+<div class="sector-card p-4">
+
+<div class="icon-box">
+<i class="fa-solid fa-house fa-3x"></i>
+</div>
+
+<h5 data-key="sector1_titulo"></h5>
+
+<p data-key="sector1_desc" style="white-space: pre-line;"></p>
+
+<!-- <a href="sectores.html?sector=residencial" class="btn-vermas1" data-key="ver_mas"></a> -->
+
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="sector-card p-4">
+
+<div class="icon-box">
+<i class="fa-solid fa-building fa-3x"></i>
+</div>
+
+<h5 data-key="sector2_titulo"></h5>
+
+<p data-key="sector2_desc"></p>
+
+<!-- <a href="sectoresCom.html?sector=comercial" class="btn-vermas1" data-key="ver_mas"></a> -->
+
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="sector-card p-4">
+
+<div class="icon-box">
+<i class="fa-solid fa-industry fa-3x"></i>
+</div>
+
+<h5 data-key="sector3_titulo"></h5>
+
+<p data-key="sector3_desc"></p>
+
+<!-- <a href="sectoresInd.html?sector=industrial" class="btn-vermas1" data-key="ver_mas"></a> -->
+
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="sector-card p-4">
+
+<div class="icon-box">
+<i class="fa-solid fa-landmark fa-3x"></i>
+</div>
+
+<h5 data-key="sector4_titulo"></h5>
+
+<p data-key="sector4_desc"></p>
+
+<!-- <a href="sectoresIns.html?sector=institucional" class="btn-vermas1" data-key="ver_mas"></a> -->
+
+</div>
+</div>
+
+
+
+
+
+
+
+<!-- PRESENCIA -->
+<div class="container reveal">
+
+<h2 class="mb-5 mt-4 titulo-seccion text-center" data-key="presencia_titulo"></h2>
+
+<div class="row align-items-center reveal-left">
+
+<!-- IZQUIERDA -->
+<div class="col-md-3">
+<ul class="lista-estados">
+  <li data-key="estado1"></li>
+  <li data-key="estado2"></li>
+  <li data-key="estado3"></li>
+  <li data-key="estado4"></li>
+  <li data-key="estado5"></li>
+</ul>
+</div>
+
+<!-- IMAGEN -->
+<div class="col-md-6 text-center reveal-right">
+  <img src="assets/img/Presencia1-removebg-preview.png" 
+       class="img-fluid" 
+       alt="Mapa de presencia">
+</div>
+
+<!-- DERECHA -->
+<div class="col-md-3 reveal-up">
+  <ul class="lista-estados">
+    <li data-key="estado6"></li>
+    <li data-key="estado7"></li>
+    <li data-key="estado8"></li>
+    <li data-key="estado9"></li>
+    <li data-key="estado10"></li>
+  </ul>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</section>
+
+
+
+
+
+<!-- TRABAJOS -->
+
+<!--<section id="trabajos" class="py-5">
+
+<div class="container">
+
+<h2 class="mb-5 titulo-seccion text-center">Proyectos que hablan por nosotros</h2>
+</h2>
+
+<div class="row align-items-center mb-5 reveal">
+
+<div class="col-md-6">
+
+<div class="info-card p-4">
+
+<h3>Nuestra Historia</h3>
+
+<p>
+Cada proyecto es el resultado de precisión, experiencia y compromiso. 
+Aquí presentamos una selección de obras que reflejan nuestra capacidad 
+para transformar el acero en estructuras sólidas, funcionales y duraderas — 
+desde naves industriales hasta estructuras arquitectónicas de gran escala.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div id="carouselIngenieria" class="carousel slide" data-bs-ride="carousel">
+
+<div class="carousel-inner rounded">
+
+<div class="carousel-item active">
+<img src="assets/img/sectores.jpg" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="assets/img/sectores2.jpeg" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="assets/img/sectores3.jpg" class="d-block w-100">
+</div>
+
+</div>
+
+TIEMPO DE CAMBIO
+
+<div id="carouselIngenieria" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"></div>
+
+</div>
+</div>
+
+</div>
+
+</section>-->
+
+
+
+
+
+
+
+
+<!-- NOSOTROS -->
+<section id="nosotros" class="py-5">
+
+<div class="container reveal">
+
+<div class="text-center mb-5 reveal-left">
+
+<h2 data-key="nosotros_titulo"></h2>
+
+<p class="nosotros-intro" data-key="nosotros_desc"></p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="info-card text-center p-4">
+
+<div class="icon-box">
+<i class="fa-solid fa-bullseye fa-1x"></i>
+</div>
+
+<h4 data-key="mision_titulo"></h4>
+
+<p data-key="mision_desc"></p>
+
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="info-card text-center p-4">
+
+<div class="icon-box">
+<i class="fa-solid fa-eye fa-1x"></i>
+</div>
+
+<h4 data-key="vision_titulo"></h4>
+
+<p data-key="vision_desc"></p>
+
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="info-card text-center p-4">
+
+<div class="icon-box">
+<i class="fa-solid fa-handshake fa-1x"></i>
+</div>
+
+<h4 data-key="valores_titulo"></h4>
+
+<ul class="valores-lista">
+<li data-key="valor1"></li>
+<li data-key="valor2"></li>
+<li data-key="valor3"></li>
+<li data-key="valor4"></li>
+<li data-key="valor5"></li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer id="footer" class="footer">
+
+<div class="container reveal">
+<div class="row">
+
+<!-- Empresa -->
+<div class="col-md-4">
+
+<p data-key="footer_desc"></p>
+
+    <img src="assets/img/LOGO FADIEM BORDE.png"
+         alt="FADIEM"
+         class="footer-logo">
+
+</div>
+
+<!-- Enlaces -->
+<div class="col-md-4">
+
+<h5 data-key="footer_enlaces"></h5>
+
+
+<ul class="footer-links">
+
+<li><a href="#servicios" data-key="link_servicios"></a></li>
+<li><a href="#sectores" data-key="link_sectores"></a></li>
+<li><a href="#nosotros" data-key="link_nosotros"></a></li>
+<li><a href="#footer" data-key="link_contacto"></a></li>
+
+</ul>
+
+</div>
+
+<!-- Contacto -->
+<div class="col-md-4">
+
+<div class="contacto">
+
+<h5 data-key="footer_contacto"></h5>
+
+<p>
+<i class="fa-solid fa-phone"></i> 
+<a href="tel:+528120802143" class="telefono">
++52 81 2080 2143
+</a>
+</p>
+
+<p>
+<i class="fa-solid fa-envelope"></i> 
+<span data-key="footer_correo"></span>
+</p>
+
+<a href="https://maps.app.goo.gl/iLaG4EoV6BH4dEHq6" target="_blank" class="text-decoration-none text-dark">
+<p>
+<i class="fa-solid fa-location-dot"></i> 
+<span data-key="footer_direccion"></span>
+</p>
+</a>
+
+</div>
+
+<div class="social-icons mt-3">
+<a href="https://www.facebook.com/profile.php?id=61565380751525&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+<a href="https://www.instagram.com/fadiem01/?igsh=cWVtOTNlZHl2ejE%3D"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/fadiem-estructuras-met%C3%A1licas-37b4a0397" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+<a href="https://wa.me/528120802143?text=Hola%20quiero%20una%20cotizacion" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="text-center">
+<p data-key="footer_copy"></p>
+</div>
+
+</div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS -->
+<script src="assets/js/script.js"></script>
+
+<!-- JS -->
+<script src="assets/js/idioma.js"></script>
+
+</body>
+</html>
