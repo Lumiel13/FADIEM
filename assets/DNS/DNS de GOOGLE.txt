@@ -1,0 +1,21 @@
+DNS de GOOGLE
+
+
+Registro de GOOGLE
+
+MX    @    1   30 min    aspmx.l.google.com
+
+MX    @    5   30 min    alt1.aspmx.l.google.com
+
+MX    @    5   30 min    alt2.aspmx.l.google.com
+
+MX    @    10  30 min    alt3.aspmx.l.google.com
+
+MX    @    10  30 min    alt4.aspmx.l.google.com
+
+
+REGISTRO PERSONALIZADO 
+
+CNAME     MAIL   N/A  30min  ghs.googlehosted.com
+
+TXT       @      N/A  30min  v=spf1 include:_spf.google.com ~all

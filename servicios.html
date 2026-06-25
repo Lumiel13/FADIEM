@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FADIEM | Servicios</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="assets/css/styleS.css">
+
+
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+
+<div class="container">
+
+<a class="navbar-brand" href="#">
+<img src="assets/img/LOGO FADIEM BORDE.png" alt="FADIEM" class="logo">
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+
+<li class="nav-item">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html" data-key="NavBar1"></a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="index.html#servicios" data-key="NavBar2"></a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="index.html#sectores" data-key="NavBar3"></a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="index.html#nosotros" data-key="NavBar4"></a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link btn btn-warning text-dark ms-3 px-3" href="cotizaciones.html" data-key="NavBar5">
+Cotizar
+</a>
+</li>
+</ul>
+
+<!-- Idiomas Seleccionador -->
+
+<div class="lang-selector">
+  <button class="lang-btn" id="lang-btn">
+    <img id="lang-flag" src="assets/img/mexico.jpg" width="24" height="24" style="border-radius: 3px;">
+    <span id="lang-label">ES</span>
+    <i class="ti ti-chevron-down"></i>
+  </button>
+
+  <div class="lang-dropdown" id="lang-dropdown">
+    <div class="lang-option" onclick="cambiarIdioma('es')">
+      <img src="assets/img/mexico.jpg" width="22" height="22" style="border-radius: 3px;"> Español
+    </div>
+    <div class="lang-option" onclick="cambiarIdioma('en')">
+      <img src="assets/img/usa.jpg" width="22" height="22" style="border-radius: 3px;"> English
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</nav>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="hero-servicios text-center">
+
+<div class="container">
+
+<h1 data-key="Servicios_titulo"></h1>
+
+<p data-key="Servicios_desc"></p>
+
+</div>
+
+</section>
+
+
+
+<!-- INGENIERIA Y DISEÑO -->
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="row align-items-center mb-5">
+
+<div class="col-md-6">
+
+<div class="info-card p-4 reveal-left">
+
+<h3 data-key="Ingenieria_titulo"></h3>
+
+<p data-key="Ingenieria_desc"></p>
+
+</div>
+
+</div>
+
+<div class="col-md-6 reveal-right">
+
+<div id="carouselIngenieria" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+
+<div class="carousel-inner rounded">
+
+
+      <div class="carousel-item active">
+    <video class="d-block w-100" autoplay muted loop>
+      <source src="assets/img/Video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+
+<div class="carousel-item">
+<img src="assets/img/Ingenieria/Ingenieria1.jpeg" class="d-block w-100">
+</div>
+
+        <div class="carousel-item">
+    <video class="d-block w-100" autoplay muted loop>
+      <source src="assets/img/Ingenieria/Video2.mp4" type="video/mp4">
+    </video>
+  </div>
+
+
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<!-- FABRICACION -->
+
+<div class="row align-items-center mb-5 flex-md-row-reverse">
+
+<div class="col-md-6">
+
+<div class="info-card p-4 reveal-left">
+
+<h3 data-key="Fabricacion_titulo"></h3>
+
+<p data-key="Fabricacion_desc"></p>
+
+</div>
+
+</div>
+
+<div class="col-md-6 reveal-right">
+
+<div id="carouselFabricacion" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+<div class="carousel-inner rounded">
+
+<div class="carousel-item active">
+<img src="assets/img/Fabricacion/Fabricacion2.1.png" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="assets/img/Fabricacion/Fabricacion1.1.png" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="assets/img/Fabricacion/Fabricacion3.1.png" class="d-block w-100">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- MONTAJE -->
+
+<div class="row align-items-center mb-5 reveal">
+
+    <!-- Texto -->
+    <div class="col-md-6">
+        <div class="info-card p-4">
+            <h3 data-key="Montaje_titulo"></h3>
+            <p data-key="Montaje_desc"></p>
+        </div>
+    </div>
+
+    <!-- Carrusel -->
+    <div class="col-md-6 reveal-right">
+        <div id="carouselReforzamientos"
+             class="carousel slide"
+             data-bs-ride="carousel"
+             data-bs-interval="5000">
+
+            <div class="carousel-inner rounded">
+
+                <div class="carousel-item active">
+                    <img src="assets/img/Montaje/Hero3.jpeg" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/img/Montaje/Hero4.jpeg" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/img/Montaje/Hero5.jpeg" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/img/Montaje/Hero6.jpeg" class="d-block w-100">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<!-- LAMINADO -->
+
+<div class="row align-items-center mb-5 flex-md-row-reverse">
+
+<div class="col-md-6">
+
+<div class="info-card p-4 reveal-right">
+
+<h3 data-key="Laminado_titulo"></h3>
+
+<p data-key="Laminado_desc"></p>
+
+</div>
+
+</div>
+
+<div class="col-md-6 reveal-left">
+
+<div id="carouselLaminado" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+<div class="carousel-inner rounded">
+
+<div class="carousel-item active">
+<img src="assets/img/Laminado/Laminado1.2.png" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="assets/img/Laminado/Laminado2.1.jpg" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="assets/img/Laminado/Laminado3.1.jpeg" class="d-block w-100">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<!-- REFORZAMIENTOS -->
+
+<div class="row align-items-center mb-5">
+
+<div class="col-md-6">
+
+<div class="info-card p-4 reveal-left">
+
+<h3 data-key="Reforzamientos_titulo"></h3>
+
+<p data-key="Reforzamientos_desc"></p>
+
+</div>
+
+</div>
+
+<div class="col-md-6 reveal-right">
+
+<div id="carouselReforzamientos" class="carousel slide" data-bs-ride="carousel"  data-bs-interval="5000">
+
+<div class="carousel-inner rounded">
+  
+<div class="carousel-item active">
+<img src="assets/img/Reforzamiento/Refuerzo1.2.png" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="assets/img/Reforzamiento/Refuerzo2.1.png" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="assets/img/Reforzamiento/Refuerzo3.jpeg" class="d-block w-100">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<!-- LIMPIEZA DE RECUBRIMIENTOS -->
+
+<div class="row align-items-center mb-5 flex-md-row-reverse reveal">
+
+<div class="col-md-6">
+
+<div class="info-card p-4">
+
+<h3 data-key="Limpieza_titulo"></h3>
+
+<p data-key="Limpieza_desc"></p>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div id="carouselLimpieza" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+    <div class="carousel-inner rounded">
+
+        <div class="carousel-item active">
+            <img src="assets/img/Mantenimiento/Mantenimiento1.png"
+                 class="d-block w-100 img-limpieza">
+        </div>
+
+        <div class="carousel-item">
+            <img src="assets/img/Mantenimiento/2.jpg"
+                 class="d-block w-100 img-limpieza">
+        </div>
+
+        <div class="carousel-item">
+            <img src="assets/img/Mantenimiento/Mantenimiento3.png"
+                 class="d-block w-100 img-limpieza">
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+<!-- COTIZACION -->
+
+<section class="text-center py-5 bg-dark text-white reveal">
+
+<h2 data-key="Cotizacion_titulo"></h2>
+
+<p data-key="Cotizacion_desc"></p>
+
+<a href="https://wa.me/528120802143?text=Hola%20quiero%20una%20cotizacion" class="btn btn-warning">
+    <span data-key="Cotizacion_boton"></span>
+</a>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer id="footer" class="footer">
+
+<div class="container reveal">
+<div class="row">
+
+<!-- Empresa -->
+<div class="col-md-4">
+
+<p data-key="footer_desc"></p>
+
+    <img src="assets/img/LOGO FADIEM BORDE.png"
+         alt="FADIEM"
+         class="footer-logo">
+
+</div>
+
+<!-- Enlaces -->
+<div class="col-md-4">
+
+<h5 data-key="footer_enlaces"></h5>
+
+<ul class="footer-links">
+
+<li><a href="#servicios" data-key="link_servicios"></a></li>
+<li><a href="#sectores" data-key="link_sectores"></a></li>
+<li><a href="#nosotros" data-key="link_nosotros"></a></li>
+<li><a href="#footer" data-key="link_contacto"></a></li>
+
+</ul>
+
+</div>
+
+<!-- Contacto -->
+<div class="col-md-4">
+
+<div class="contacto">
+
+<h5 data-key="footer_contacto"></h5>
+
+<p>
+<i class="fa-solid fa-phone"></i> 
+<a href="tel:+528120802143" class="telefono">
++52 81 2080 2143
+</a>
+</p>
+
+<p>
+<i class="fa-solid fa-envelope"></i> 
+<span data-key="footer_correo"></span>
+</p>
+
+<a href="https://maps.app.goo.gl/iLaG4EoV6BH4dEHq6" target="_blank" class="text-decoration-none text-dark">
+<p>
+<i class="fa-solid fa-location-dot"></i> 
+<span data-key="footer_direccion"></span>
+</p>
+</a>
+
+</div>
+
+<div class="social-icons mt-3">
+<a href="https://www.facebook.com/profile.php?id=61565380751525&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+<a href="https://www.instagram.com/fadiem01/?igsh=cWVtOTNlZHl2ejE%3D"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/fadiem-estructuras-met%C3%A1licas-37b4a0397" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+<a href="https://wa.me/528120802143?text=Hola%20quiero%20una%20cotizacion" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="text-center">
+<p data-key="footer_copy"></p>
+</div>
+
+</div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS -->
+<script src="assets/js/script.js"></script>
+
+<!-- JS -->
+<script src="assets/js/idioma.js"></script>
+
+</body>
+</html>

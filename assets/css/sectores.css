@@ -1,0 +1,302 @@
+/* NAVBAR */
+
+.navbar-brand{
+font-size:1.5rem;
+letter-spacing:2px;
+}
+
+.navbar{
+box-shadow:0 2px 10px rgb(158, 157, 157);
+height: 60px;
+padding: 10px 0;
+}
+
+.nav-link{
+font-weight:500;
+}
+
+
+
+
+.navbar-custom{
+background:rgba(0,48,130);
+transition:0.4s;
+}
+
+.navbar-scrolled{
+background:#111;
+box-shadow:0 4px 10px rgba(0,48,130,0.3);
+}
+
+.nav-link{
+color:white !important;
+font-weight:500;
+}
+
+.logo{
+height:200px;
+}
+
+/* móvil */
+
+@media (max-width:768px){
+
+.logo{
+height:45px;
+}
+}
+
+
+@media (max-width: 991px){
+
+.navbar-collapse{
+background:rgba(102,99,102);
+padding:15px;
+margin-top:10px;
+border-radius:10px;
+}
+}
+
+.navbar-collapse .nav-link{
+padding:10px 0;
+}
+
+
+
+
+.logo{
+height:120px;
+width:auto;
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 768px){
+
+.logo{
+height:45px;
+}
+
+}
+
+
+.nav-link.active{
+color:#f4b400 !important;
+}
+
+
+
+
+
+/* CARRUSEL */
+.carousel-item img{
+height:300px;
+object-fit:cover;
+}
+
+
+/* CARDS */
+
+.info-card{
+background:rgb(239, 236, 239);
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+height:100%;
+}
+
+.info-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+#trabajos h2{
+    color:rgb(0,48,130);
+    transition: 0.3s;
+}
+#trabajos h2:hover{
+    color:black;
+}
+
+
+/* TITLE CARDS */
+
+.py-5 h3{
+ color:rgba(0,48,130);
+}
+
+.py-5 h3:hover{
+ color:rgb(133, 130, 133);
+}
+
+
+#header h2{
+  color: white;
+}
+
+#header h2:hover{
+  color: rgba(0,48,130);
+}
+
+
+
+
+
+
+
+#header {
+  background: 
+    linear-gradient(to bottom, 
+      rgba(0,0,0,0) 60%, 
+      rgba(255,255,255,1) 100%
+    ),
+    url('../img/sectores3.jpg');
+
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* SCROLL ANIMATION */
+
+
+.reveal{
+opacity:0;
+transform:translateY(50px);
+transition:all 0.6s ease;
+}
+
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: all 0.8s ease;
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: all 0.8s ease;
+}
+
+.reveal-up {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.8s ease;
+}
+
+/* Estado visible */
+.reveal-left.active,
+.reveal-right.active,
+.reveal-up.active {
+  opacity: 1;
+  transform: translate(0);
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+.footer{
+background:#111;
+color:white;
+padding:50px 0;
+}
+
+.footer-logo{
+height:80px;
+width:80px;
+max-width:100%;
+}
+
+.footer .col-md-4:first-child{
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+@media (max-width:768px){
+.footer-logo{
+height:60px;
+}
+}
+
+.footer h5{
+margin-bottom:15px;
+font-weight:600;
+}
+
+
+.footer p{
+color:#bbb;
+font-size:14px;
+}
+
+.footer-links{
+list-style:none;
+padding:0;
+}
+
+.footer-links li{
+margin-bottom:8px;
+}
+
+.footer-links a{
+color:#bbb;
+text-decoration:none;
+transition:0.3s;
+}
+
+.footer-links a:hover{
+color:#f4b400;
+}
+
+
+
+.telefono{
+color:#bbb;
+text-decoration:none;
+transition:0.3s;
+}
+
+.telefono:hover{
+color:#f4b400;
+}
+
+.contacto p{
+transition: 0.3s;
+}
+
+.contacto p:hover{
+color:#f4b400;
+}
+
+
+.social-icons a{
+color:white;
+margin-right:10px;
+font-size:18px;
+transition:0.3s;
+}
+
+.social-icons a:hover{
+color:#f4b400;
+}
